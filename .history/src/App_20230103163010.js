@@ -13,25 +13,8 @@ const App = () => {
     })
    }, [])
 
-const PopularMovieList = () => {
-  return popularMovies.map((movie, i) => {
-    return (
-        <div className="Movie-wrapper" key={i}>
-          <div className="Movie-title">{movie.title}</div>
-          <img 
-          className="Movie-image" 
-          src={`${process.env.REACT_APP_BASEIMGURL}/${movie.poster_path}`}/>
-          <div className="Movie-date">release: {movie.release_date}</div>
-          <div className="Movie-rate">{movie.vote_average}</div>
-      </div>
-    )
-  })
-  }
-
-const search = async (q) => {
-  if (q.length > 3) {
-  const query = await searchMovie(q)
-setPopularMovies(query.results)}
+const search = (q) => {
+  console.log({ q })
 }
 
   return (
@@ -44,7 +27,12 @@ setPopularMovies(query.results)}
       onChange={({ target }) => search(target.value)}
       />
       <div className="Movie-container">
-        <PopularMovieList />
+        <div className="Movie-wrapper">
+          <div className="Movie-title">Contoh</div>
+          <img className="Movie-image" src="" />
+          <div className="Movie-date"> 11-12-2022</div>
+          <div className="Movie-rate">8.9</div>
+          </div>
       </div>
       </header>
     </div>

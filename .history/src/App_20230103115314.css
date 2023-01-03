@@ -22,7 +22,6 @@
 .Movie-container {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -37,26 +36,4 @@
 .Movie-search {
 height: 60px;
 font-size: 24px;
-margin-bottom: 32px;
-padding: 16px;
-font-weight: bold;
-}
-
-.Movie-title {
-  height: 60px;
-  margin-top: 26px;
-  font-weight: bold;
-}
-
-.Movie-date {
-  margin-top: 26px;
-  font-style: italic;
-}
-
-.Movie-rate {
-  color: red;
-  margin-bottom: 24px;
-  font-weight: bold;
-  font-style: 1.2em;
-  text-decoration: underline;
 }

@@ -28,10 +28,8 @@ const PopularMovieList = () => {
   })
   }
 
-const search = async (q) => {
-  if (q.length > 3) {
-  const query = await searchMovie(q)
-setPopularMovies(query.results)}
+const search = (q) => {
+  console.log({ q })
 }
 
   return (
